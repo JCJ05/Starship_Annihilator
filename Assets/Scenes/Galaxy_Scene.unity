@@ -228,7 +228,7 @@ MonoBehaviour:
   limiteInferior: 0
   limiteSuperior: 0
   velocidadFondoVertical: 1
-  laserPrefab: {fileID: 6993253991211896511, guid: f35187a90d16f7b4da1fe7a8b9e08153, type: 3}
+  laserPrefab: {fileID: 3477771568589252496, guid: 30be7b8e3d227d44facd00dbbb1125e1, type: 3}
   laserSpeed: 5
 --- !u!61 &328218020
 BoxCollider2D:
