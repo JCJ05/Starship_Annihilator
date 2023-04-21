@@ -8,7 +8,7 @@ public class GameManage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       InvokeRepeating("SpawnAparecer", 1f, 1f); 
+       InvokeRepeating("SpawnAparecer", 3f, 3f); 
     }
 
     // Update is called once per frame
@@ -24,7 +24,13 @@ public class GameManage : MonoBehaviour
 
         Vector3 position = new Vector3(randomX,randomY,0);
 
-        Instantiate(inputGOTarget,position, Quaternion.identity);
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(position, 0.5f); // ajusta el valor del radio según tus necesidades
+        bool isOverlap = hitColliders.Length > 0;
 
+        if (isOverlap) {
+                SpawnAparecer();
+        } else {
+                Instantiate(inputGOTarget,position, Quaternion.identity);
+        }
     }
 }
