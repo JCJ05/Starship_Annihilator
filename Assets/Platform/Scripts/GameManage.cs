@@ -33,4 +33,6 @@ public class GameManage : MonoBehaviour
                 Instantiate(inputGOTarget,position, Quaternion.identity);
         }
     }
+
+  
 }
