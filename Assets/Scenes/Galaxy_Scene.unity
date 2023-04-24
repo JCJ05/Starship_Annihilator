@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da00fa1018a3d97459496d4821a05e5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.2
+  scrollSpeed: 0.4
   mesh: {fileID: 1376385490}
 --- !u!64 &1376385489
 MeshCollider:
@@ -991,10 +991,10 @@ MonoBehaviour:
   - {fileID: 6713528927058547738, guid: b4e4652e030451d449788d6dc6959356, type: 3}
   - {fileID: 646243482550431941, guid: d6c6ec6e2738fd84c817af205047a74e, type: 3}
   spawnValues: {x: 7.5, y: 6.41, z: 0}
-  hazardCount: 5
+  hazardCount: 8
   spawnWait: 0.5
   starWait: 2
-  waveWait: 4
+  waveWait: 3
   restartText: {fileID: 970816763}
   gameOverText: {fileID: 566607240}
 --- !u!1 &1735504004
