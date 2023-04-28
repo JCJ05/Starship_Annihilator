@@ -29,15 +29,22 @@ public class BarraVidaPlayer : MonoBehaviour
 
         if(vidaActual <= 0){
             
-            GameObject objetoAEliminar = GameObject.Find("Ship_Aniquilator");
-            Destroy(objetoAEliminar);
+            
 
             GameObject barra = GameObject.Find("life_player");
             Destroy(barra);
 
-
             GameObject explosionInstance = Instantiate(explosionPlayer , transform.position, transform.rotation);
             Destroy(gameObject);
+
+            GameObject objetoAEliminar = GameObject.Find("Ship_Aniquilator");
+            Destroy(objetoAEliminar);
+
+            GameObject objetoAEliminar2 = GameObject.Find("Cap_Enemy");
+            Destroy(objetoAEliminar2);
+
+            GameObject objeto = GameObject.Find("GameObjectMesage");
+            objeto.GetComponent<Level02Controller>().FinJuego();
         }
     }
 }

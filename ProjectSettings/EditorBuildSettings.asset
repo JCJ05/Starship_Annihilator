@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos_Escena.unity
     guid: 13837f9a3219a294b984ff8e4092b0d9
+  - enabled: 1
+    path: Assets/Scenes/Galaxy_Scene2.unity
+    guid: 3618c991df5010048956a6413459d099
   m_configObjects: {}

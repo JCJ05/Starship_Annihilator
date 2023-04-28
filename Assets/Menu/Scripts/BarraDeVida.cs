@@ -33,6 +33,9 @@ public class BarraDeVida : MonoBehaviour
 
             GameObject explosionInstance = Instantiate(explosion , transform.position, transform.rotation);
             Destroy(gameObject);
+
+            GameObject objeto = GameObject.Find("GameObjectMesage");
+            objeto.GetComponent<Level02Controller>().WinGame();
         }
     }
 }

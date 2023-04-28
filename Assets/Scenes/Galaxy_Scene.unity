@@ -1033,7 +1033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 480, y: 230}
+  m_AnchoredPosition: {x: 435, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050981630
@@ -1240,16 +1240,17 @@ MonoBehaviour:
   - {fileID: 125330391469923700, guid: 86cde630bd016a542ab8e6e7474a3899, type: 3}
   - {fileID: 6713528927058547738, guid: b4e4652e030451d449788d6dc6959356, type: 3}
   - {fileID: 646243482550431941, guid: d6c6ec6e2738fd84c817af205047a74e, type: 3}
+  - {fileID: 646243482550431941, guid: d6c6ec6e2738fd84c817af205047a74e, type: 3}
   spawnValues: {x: 7.5, y: 6.41, z: 0}
-  hazardCount: 8
+  hazardCount: 12
   spawnWait: 0.5
-  starWait: 2
-  waveWait: 2
+  starWait: 1
+  waveWait: 1
   restartText: {fileID: 970816763}
   gameOverText: {fileID: 566607240}
   inputScoreText: {fileID: 1050981630}
   timeLifeText: {fileID: 1465305314}
-  contadorTime: 10
+  contadorTime: 60
 --- !u!1 &1465305312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,8 +1286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 260}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 220}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465305314
 MonoBehaviour:
@@ -1310,11 +1311,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

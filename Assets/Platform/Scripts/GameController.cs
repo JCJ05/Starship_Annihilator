@@ -95,10 +95,31 @@ public class GameController : MonoBehaviour
 
       public void TimeCounter(){
         contadorTime--;
-        if (contadorTime<0){
+        if (contadorTime<=0){
 
-            GameOver();
+            StartCoroutine(detenerCourutine());
         }
         timeLifeText.text = string.Format("{0}", contadorTime);
+    }
+
+    IEnumerator detenerCourutine()
+    {
+        StopCoroutine("SpanWaves");
+        gameOverText.text = "Felicidades pasaste al segundo nivel";
+        GameOver();
+        
+        restartText.text = "";
+        restartText.gameObject.SetActive(true);
+
+        for(int i = 5; i >= 1; i--){
+
+           restartText.text = "Seras dirigo al segundo nivel en " + i;
+           yield return new WaitForSeconds(1f);
+
+        }
+
+        
+        SceneManager.LoadScene("Galaxy_Scene2");
+
     }
 }
