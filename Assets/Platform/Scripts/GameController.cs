@@ -15,8 +15,13 @@ public class GameController : MonoBehaviour
     
     public Text restartText;
     public Text gameOverText;
+    public Text inputScoreText;
+    public Text timeLifeText;
+
     private bool restart;
     private bool gameOver;
+    private int score = 0;
+    public int contadorTime = 180;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +31,9 @@ public class GameController : MonoBehaviour
         restartText.gameObject.SetActive(false);
         gameOverText.gameObject.SetActive(false);
         StartCoroutine(SpanWaves());
+
+        timeLifeText.text = string.Format("{0}", contadorTime);
+        InvokeRepeating("TimeCounter", 1f, 1f);
     }
 
     // Update is called once per frame
@@ -69,11 +77,28 @@ public class GameController : MonoBehaviour
     {
         gameOver = true;
         gameOverText.gameObject.SetActive(true);
+        timeLifeText.gameObject.SetActive(false);
+        CancelInvoke("TimeCounter");
 
     }
 
      void OnBecameInvisible()
     {
         Destroy(gameObject);
+    }
+
+     public void IncrementScore(){
+        
+        score++;
+        inputScoreText.text = score.ToString();
+    }
+
+      public void TimeCounter(){
+        contadorTime--;
+        if (contadorTime<0){
+
+            GameOver();
+        }
+        timeLifeText.text = string.Format("{0}", contadorTime);
     }
 }

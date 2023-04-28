@@ -19,7 +19,10 @@ public class DestroyObject : MonoBehaviour
     {   
         GameObject explosionInstance = null;
         
-        if(other.CompareTag("enemy")) return;
+        if(other.CompareTag("enemy")) {
+
+            return;
+        }
 
         if(explosion != null){
            

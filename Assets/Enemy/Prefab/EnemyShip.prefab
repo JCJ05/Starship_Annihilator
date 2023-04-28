@@ -242,4 +242,4 @@ MonoBehaviour:
   shot: {fileID: 1809882726374066023, guid: fc22ff1302ab60e46a01c2db90c08d29, type: 3}
   shotDire: {fileID: 646243480849547885}
   delay: 0.5
-  fireRate: 2
+  fireRate: 5

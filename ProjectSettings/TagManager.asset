@@ -6,6 +6,7 @@ TagManager:
   tags:
   - shoot
   - enemy
+  - nodriza
   layers:
   - Default
   - TransparentFX

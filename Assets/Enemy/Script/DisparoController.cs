@@ -26,7 +26,8 @@ public class DisparoController : MonoBehaviour
     }
 
     void DestroyObject()
-{
+{    
+    Debug.Log("Hola mundo");
     Destroy(gameObject); // Destruye el objeto al que está adjuntado este script
 }
 }
